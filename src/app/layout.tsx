@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import './globals.css';
 import { Metadata } from "next";
 import Header from "@/components/Header";
+import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: {
@@ -35,10 +36,12 @@ export default function RootLayout({
       <body
         className="bg-element1 text-text1 min-h-screen font-pretendard overflow-y-auto"
       >
-        <Header />
-        <main className="flex justify-center w-full h-full">
-          {children}
-        </main>
+        <Providers>
+          <Header />
+          <main className="flex justify-center w-full h-full">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   );

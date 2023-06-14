@@ -15,6 +15,12 @@ function Header({ }: Props)
             <Link href="/search" className="flex items-center text-lg font-medium hover:underline">
                 Search
             </Link>
+            <Link href="/redux" className="flex items-center text-lg font-medium hover:underline">
+                Redux
+            </Link>
+            <Link href="/zustand" className="flex items-center text-lg font-medium hover:underline">
+                Zustand
+            </Link>
         </nav>
     );
 }
