@@ -1,3 +1,6 @@
+필요할 때 찾아보기 위한 Next JS 13 보일러 플레이트입니다.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
