@@ -1,15 +1,19 @@
 import { create } from "zustand";
 
-interface Board
+export interface Board
 {
     id: number;
     title: string;
     description: string;
 }
 
-interface BoardStore
+interface BoardStore extends BoardActions
 {
     list: Board[];
+}
+
+interface BoardActions
+{
     addPost: (postData: Board) => void;
     removePost: (id: number) => void;
 }

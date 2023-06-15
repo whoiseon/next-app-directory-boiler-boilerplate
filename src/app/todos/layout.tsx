@@ -1,5 +1,6 @@
 import TodoList from "@/components/TodoList";
 import { Metadata } from "next";
+import HydratedTodos from "./HydratedTodos";
 
 export const metadata: Metadata = {
     title: 'Todos',
@@ -21,7 +22,7 @@ function TodoLayout({ children }: Props)
     return (
         <div className="flex gap-8">
             {/* @ts-expect-error Async Server Component */}
-            <TodoList />
+            <HydratedTodos />
             <div className="flex flex-col w-[500px] item-center">{children}</div>
         </div>
     );
