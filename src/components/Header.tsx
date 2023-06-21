@@ -1,9 +1,8 @@
 import Link from "next/link";
 
-interface Props { }
+interface Props {}
 
-function Header({ }: Props)
-{
+function Header({}: Props) {
     return (
         <nav className="flex item-center justify-center gap-4 w-full h-[60px] sticky top-0 bg-element1">
             <Link href="/" className="flex items-center text-lg font-medium hover:underline">
@@ -20,6 +19,9 @@ function Header({ }: Props)
             </Link>
             <Link href="/zustand" className="flex items-center text-lg font-medium hover:underline">
                 Zustand
+            </Link>
+            <Link href="/chat" className="flex items-center text-lg font-medium hover:underline">
+                Chat
             </Link>
         </nav>
     );
